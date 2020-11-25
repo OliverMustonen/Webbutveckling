@@ -1,8 +1,0 @@
-log.txt
-# ignorerar en specifik fil
-
-/mappnamn
-# ignorerar en hel folder
-
-#  *.txt
-# igorerar alla .txt filer
