@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bygg din nya hemsdia med oss på Hemsida.nu Dubehöver ingen tidigare erfarenhet av HTML.. Kom igen, det blir kui">
+    <meta name="keywords" content="lektion 1, ec, utbildning, html, css">
+    <meta name="author" content="Oliver Mustonen">
+    <title>Lektion 1 - genomgång av element</title>
+
+    <style>
+        .border {
+            border: 1px solid black;
+        }
+        .custom-class {
+            background: black;
+        }
+        
+        /* Medium devices (tablets, 768pc and up)*/
+        @media(min-width: 768px) {
+            .custom-class {
+                background: green;
+            }
+        }
+
+        @media(min-width: 992px) {
+            .custom-class {
+                background: blue;
+            }
+        }
+        /* Extra large devices large desktops, 1200px and up */
+        @media(min-width: 1200px) {
+            .custom-class {
+                background:yellow;
+            }
+        }
+        /* Extra large devices large desktops, 1200px and up */
+        @media(min-width: 1600px) {
+            .custom-class {
+                background: orange;
+            }
+        }
+
+    </style>
+</head>
+<body class="custom-class">
+   
+<!-- BLOCK ELEMENT -->
+<section class="border">Section</section>
+<header class="border">Header</header>
+<footer class="border">Footer</footer>
+<main class="border">Main</main>
+<nav class="border">Nav</nav>
+<aside class="border">Aside</aside>
+<div class="border">Div</div>
+<p class="border">Paragraf</p>
+
+<H1 class="border">H1</H1>
+<h2 class="border">H2</h2>
+<h3 class="border">H2</h3>
+<h4 class="border">H2</h4>
+<h5 class="border">H2</h5>
+<h6 class="border">H2</h6> 
+
+<hr>
+<br>
+
+<!-- Inline element-->
+<i class="border">Italic</i>
+<em class="border">emphasize</em>
+<b class="border">bold</b>
+<strong class="border">Strong</strong>
+<u class="border">Underline</u>
+<ins class="border">inserted</ins>
+<span class="border">span</span>
+<small class="border">small</small>
+<del class="border">del</del>
+<s class="border">s</s>
+
+<a class="border" href="https://www.google.com" target="_blank">en länk</a>
+
+<!-- LISTOR -->
+
+<ul class="border">
+    <li>unordered list item</li>
+    <li class="border">unordered list item</li>
+    <li>unordered list item</li>
+</ul>
+
+<ol class="border">
+    <li>ordered list item</li>
+    <li>ordered list item</li>
+    <li>ordered list item</li>
+</ol>
+
+<!-- TABLE -->
+<table>
+    <thead>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>column</td>
+            <td>column</td>
+        </tr>
+        <tr>
+            <td>column</td>
+            <td>column</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+
+<img src="get zucced.jpg" alt="Beskrivande text">
+
+<div class="border">
+    <img width="200px" height="200px" src="get zucced.jpg" alt="Beskrivande text">
+</div>
+
+<img height="200px" src="img/get zucced.jpg" alt="Beskrivande text">
+
+<div style="height: 500px;"></div>
+
+
+<!-- BRA STRUKTUR -->
+<div>
+    <div>
+        <div>
+            <p>hej</p>
+            </div>
+            <div>
+            <p>hej hej</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
