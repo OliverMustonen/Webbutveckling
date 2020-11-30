@@ -1,0 +1,14 @@
+@import 'color.css';
+
+
+.bg-primary {
+    background: var(--secondary) !important;
+}
+
+.box {
+    background-color: var(--bg-primary);
+    border: 1px solid black;
+    border-radius:  50%;
+    width: 150px;
+    height: 150px;
+}
