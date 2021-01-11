@@ -1,0 +1,27 @@
+* {
+  border: 1px solid #333;
+}
+html, body {
+  border: none;
+}
+.whitespace {
+  height: 500px;
+  border: none;
+}
+
+/* 
+Inline element gårt inte att styla i alla led, då kan vi använda inline-block som är en kompination av båda
+*/
+a {
+  /* margin: 1rem; */
+  display: inline-block;
+  text-decoration: none;
+}
+
+ /* snabb kommando för kommetarer = ctrl + ' */
+ul {
+  display: flex;
+}
+li {
+  list-style: none;
+}

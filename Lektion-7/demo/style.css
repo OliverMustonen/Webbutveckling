@@ -1,0 +1,15 @@
+.grid-wrapper div {
+background-color: #cecece;
+padding: 1rem;
+}
+
+.grid-wrapper div:nth-child(odd) {
+    background-color: #eee;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 50% 30% 20%;
+}
+
+
