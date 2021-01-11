@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+/* font-family: 'Roboto Slab', serif; */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #626262;
+}
+a {
+  color: #2BAAEC;
+  text-decoration: none;
+} 
+a:hover {
+  color: #25E6C8;
+}
+.container {
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+/*Color ---------------------------------------------------------------------------------------------------------------------------*/
+
+.cl-blue {
+  color: #2BAAEC;
+}
+
+.bg-gray {
+  background: #DEDEDE;
+  
+}
+
+.bg-gray-1 {
+  background: #F7F7F7;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------*/
+
+.btn {
+  display: inline-block;
+  /* font-weight: 400; */
+  text-align: center;
+  vertical-align: middle;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.75rem 2.5rem;
+  border-radius: 0.5rem;
+}
+.btn-greenish {
+  color: #fff;
+  background-color: #25E6C8;
+  font-weight: bold;
+}
+
+.btn-greenish:hover {
+  color: #fff;
+  background-color: #2BAAEC;
+  font-weight: bold;
+}
+
+.btn-blueish {
+  color: #2BAAEC;
+  background-color: #FFFFFF;
+  font-weight: bold;
+}
+
+
+/*Hidden */
+.collapse:not(.show) {
+  display: none;
+}
+
+
+.border {
+  border: 2px solid #25E6C8;
+  background-color: #25E6C8;
+  width: 35rem;
+}
+.border-1 {
+  border: 2px solid #25E6C8;
+  background-color: #25E6C8;
+  
+}
+
+
+/*Nav ---------------------------------------------------------------------------------------------------------------------------*/
+
+
+.navbar-top {
+  border-bottom: 1px solid #707070;
+  padding: 0.5rem;
+  /* font-family: 'Roboto', sans-serif; */
+}
+.navbar-top .container, .navbar .container {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-top .container .hours i {
+  color: #2BAAEC;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+
+.navbar-top .container .socialmedia a {
+  margin: 0 0.5rem;
+}
+.navbar .container {
+  align-items: center;
+}
+.navbar {
+  margin: 1.2rem 0;
+  padding: 0.5rem;
+}
+.navbar-brand img {
+  height: 4rem;
+}
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+}
+.nav-link {
+  color: #363636;
+  font-family: 'Roboto Slab', serif;
+}
+.navbar-toggler {
+  font-size: 2.5rem;
+  color: #2BAAEC;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+/*Showcase ---------------------------------------------------------------------------------------------------------------------------*/
+
+#showcase .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4rem;
+}
+#showcase .container img {
+  height: 500px;
+  margin-top: 1rem;
+}
+#showcase .container .content-box {
+  align-self: center;
+  
+}
+
+
+#showcase .container .content-box h1 {
+  color: #363636;
+  font-family: 'Roboto Slab', serif;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+
+#showcase .container .content-box p {
+  font-size: 0.9rem;
+  margin: 2.5rem 0;
+}
+
+/*About us ---------------------------------------------------------------------------------------------------------------------------*/
+
+#about-us .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+#about-us .container img {
+  height: 500px;
+  padding-left: 3rem;
+  margin-top: 2rem;
+}
+#about-us .container .content-box {
+  align-self: center;
+  
+}
+
+#about-us .container .content-box .info {
+   display: block;
+    margin: auto;
+}
+
+#about-us .container .content-box h1  {
+  color: #363636;
+  font-family: 'Roboto Slab', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.1;
+  padding-bottom: 1rem; 
+}
+
+#about-us .container .content-box p {
+  font-size: 0.9rem;
+ 
+}
+
+#about-us .container .content-box .box {
+  
+  width: 33.3%;
+  float: left;
+}
+
+#about-us .container .content-box .box p {
+  font-size: 0.9rem;
+   font-family: 'Roboto Slab', serif;
+}
+
+
+/*Services ---------------------------------------------------------------------------------------------------------------------------*/
+
+
+#box-1 {
+  grid-area: box-1;
+  align-self: center;
+  justify-self: center;
+}
+#box-2 {
+  grid-area: box-2;
+  align-self: center;
+  justify-self: center;
+  
+}
+#box-3 {
+  grid-area: box-3;
+  align-self: center;
+  justify-self: center;
+  
+}
+#box-4 {
+  grid-area: box-4;
+  align-self: center;
+  justify-self: center;
+}
+#box-5 {
+  grid-area: box-5;
+  align-self: center;
+  justify-self: center;
+}
+#box-6 {
+  grid-area: box-6;
+  align-self: center;
+  justify-self: center;
+}
+
+
+#services .container {
+  
+  display: grid;
+  grid-template-areas:
+    'empty-1 Serivces empty-2'
+    'box-1 box-2 box-3'
+    'box-4 box-5 box-6';
+  grid-gap: 2rem;
+  padding: 10px;
+  padding-bottom: 7rem;
+}
+.text-center {
+  text-align: center;
+  grid-area: Serivces;
+  padding-top: 4rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 4px solid #25E6C8;
+}
+
+#services .container .text-center h1 {
+  font-size: 2rem;
+  font-weight: lighter;
+  color: #363636;
+   font-family: 'Roboto Slab', serif;
+}
+
+#services .container .box h1 {
+  padding-top: 3rem;
+  font-size: 1.3rem;
+  font-weight: lighter;
+  color: #363636;
+   font-family: 'Roboto Slab', serif;
+   padding-bottom: 1rem;
+}
+
+#services .box {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  width: 23rem;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+  border: white;
+  text-align: center;
+
+}
+
+#services .box:hover .dot{
+  background: #2BAAEC;
+  transition-delay: 0.1s;
+  border: 6px solid rgb(212, 238, 251);
+  
+}
+
+
+#services .box:hover {
+  box-shadow: 1px 8px 10px 8px #dddddd;
+  transition-delay: 0.2s;
+}
+
+
+
+
+#services .box img {
+  padding-top: 1.5rem;
+}
+
+.dot {
+  height: 6.9rem;
+  width: 6.9rem;
+  background-color: #25E6C8;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+
+
+/*Appointment ---------------------------------------------------------------------------------------------------------------------------*/
+#appointment {
+  background-color: rgb(78, 180, 232);
+  }
+
+#appointment h1{
+  padding-top: 3.6rem;
+  color: white;
+  font-family: 'Roboto Slab', serif;  
+  font-weight: lighter;
+}
+#appointment button{
+  
+    background: #FFFFFF;
+    width: 15rem;
+    height: 3rem;
+    margin-left: 20rem;
+    margin-top: 3rem;
+  }
+
+  #appointment button:hover{
+    
+    background-color: rgb(78, 180, 232);
+    border: 2px solid white;
+    color: white;
+  }
+
+ 
+
+#appointment .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+height: 10rem;
+background-color: rgb(78, 180, 232);
+
+}
+
+/*Mobile ---------------------------------------------------------------------------------------------------------------------------*/
+#mobile-us .container{
+  padding-bottom: 3rem;
+}
+#mobile-us .container h1 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: #363636;
+   font-family: 'Roboto Slab', serif;
+   text-align: center;
+}
+
+#mobile-us .container .box {
+  padding-left: 1rem;
+  width: 33.3%;
+  float: left;
+}
+
+
+
+#mobile-showcase .container {
+  background-color: #f7f7f7;
+  margin-top: 4rem;
+}
+
+#mobile-showcase .container h1 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: #363636;
+   font-family: 'Roboto Slab', serif;
+   text-align: left;
+}
+#mobile-showcase .container .img-1 {
+  width: 150px;
+  margin-left: 0rem;
+  padding-top: 2rem;
+}
+#mobile-showcase .container .img-2 {
+  width: 100px;
+  padding-top: 3rem;
+  margin-left: 4rem;
+  float: right;
+}
+
+#card-1 {
+  grid-area: card-1;
+  align-self: center;
+  justify-self: center;
+}
+#card-2 {
+  grid-area: card-2;
+  align-self: center;
+  justify-self: center;
+  
+}
+#card-3 {
+  grid-area: card-3;
+  align-self: center;
+  justify-self: center;
+  
+}
+#card-4 {
+  grid-area: card-4;
+  align-self: center;
+  justify-self: center;
+}
+#card-5 {
+  grid-area: card-5;
+  align-self: center;
+  justify-self: center;
+}
+#card-6 {
+  grid-area: card-6;
+  align-self: center;
+  justify-self: center;
+}
+
+
+#mobile-services .container {
+  background-color: #f7f7f7;
+  display: grid;
+  grid-template-areas:
+    'our our'
+    'card-1 card-2'
+    'card-3 card-4'
+    'card-5 card-6';
+  grid-gap: 1rem;
+  padding: 10px;
+  padding-bottom: 7rem;
+}
+
+.textcenter {
+  text-align: center;
+  grid-area: our;
+ 
+  padding-top: 4rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 4px solid #25E6C8;
+}
+
+#mobile-services .container .text-center h1 {
+  font-size: 2rem;
+  font-weight: lighter;
+  color: #363636;
+   font-family: 'Roboto Slab', serif;
+}
+
+#mobile-services .container .card h1 {
+  padding-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: lighter;
+  color: #363636;
+   font-family: 'Roboto Slab', serif;
+   padding-bottom: 1rem;
+}
+
+
+
+#mobile-services .card:hover .dot-mob{
+  background: #2BAAEC;
+  transition-delay: 0.1s;
+  border: 6px solid rgb(212, 238, 251);
+  
+}
+
+
+#mobile-services .card:hover {
+  box-shadow: 1px 8px 10px 8px #dddddd;
+  transition-delay: 0.2s;
+}
+
+
+
+
+#mobile-services .card img {
+  padding-top: 1.5rem;
+  
+}
+
+.dot-mob {
+  height: 6.9rem;
+  width: 6.9rem;
+  background-color: #25E6C8;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+#mobile-services .card {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 10rem;
+  height: 15rem;
+  background-color: white;
+  border-radius: 10px;
+  border: white;
+  text-align: center;
+
+}
+
+
+#appointment-mob {
+  background-color: rgb(78, 180, 232);
+  }
+
+#appointment-mob h1{
+  text-align: center;
+  color: white;
+  font-family: 'Roboto Slab', serif;  
+  font-weight: lighter;
+}
+#appointment-mob button{
+    background: #FFFFFF;
+    width: 14rem;
+    height: 3rem;
+    margin-left: 20%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  #appointment-mob button:hover{
+    
+    background-color: rgb(78, 180, 232);
+    border: 2px solid white;
+    color: white;
+  }
+
+ 
+
+
+
+
+/*Footer ---------------------------------------------------------------------------------------------------------------------------*/
+footer {
+  height: 4rem;
+  background-color: #2BAAEC;
+  text-align: center;
+  padding-top: 0.9rem;
+}
+footer p{
+  color: #f3fbffbe;
+  font-size: 15px;
+  
+}
+
+/*Min width ---------------------------------------------------------------------------------------------------------------------------*/
+
+@media(min-width: 768px) {
+  .navbar-nav {
+    flex-direction: row;
+  }
+  .nav-link {
+    padding: 0 0.5rem;
+  }
+  .collapse:not(.show){
+    display: flex;
+  }
+  .navbar-toggler {
+    display: none;
+  }
+  .container {
+    max-width: 720px;
+  }
+  #mobile-us:not(.show) {
+    display: none;
+  }
+  #mobile-showcase:not(.show) {
+    display: none;
+  }
+  #mobile-services:not(.show) {
+    display: none;
+  }
+  #appointment-mob:not(.show) {
+    display: none;
+  }
+ 
+  
+}
+
+
+
+@media(min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+
+
+@media(min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
