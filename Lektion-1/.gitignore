@@ -1,9 +1,0 @@
-log.txt
-# Ignorerar en epecifik fil
-
-
-#   *.txt
-#Ignorerar alla .txt filer
-
-/Lektion-1
-#Ignorerar en hel folder
