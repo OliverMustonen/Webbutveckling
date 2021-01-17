@@ -24,6 +24,7 @@ a:hover {
 .container {
   width: 100%;
   margin: 0 auto; 
+  padding: 0 1rem;
 }
 
 .navbar .container {
@@ -442,6 +443,130 @@ footer .navbar .socialmedia a{
 
 
 
+
+/* Mobile header ---------------------------------------------------------------------------------------------------------------------------*/
+#mobile-header .container{
+  padding: 10px;
+}
+#mobile-header .video-mob{
+  color: #ffffff;
+  float: right;
+  margin-right: 9rem;
+}
+
+#mobile-header .container .content-box h1{
+  font-size: 1.8rem;
+}
+.navbar-toggler {
+  font-size: 2.5rem;
+  color: #FFBB00;
+  background-color: transparent;
+  border: 1px solid transparent;
+  float: right;
+}
+.bg-mob{
+  background-image: url("images/Rectangle\ 1914.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+#mobile-header .container h1{
+  color: #ffffff;
+}
+#mobile-header .container p{
+  color: #ffffff;
+}
+
+
+/* Mobile us ---------------------------------------------------------------------------------------------------------------------------*/
+
+
+#mobile-us .content-box h1{
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+#mobile-us .content-box p{
+  font-size: 0.9rem;
+  
+}
+
+#mobile-us .content-box img{
+ padding-top: 1rem;
+}
+
+/* Mobile feature ---------------------------------------------------------------------------------------------------------------------------*/
+#mobile-feature .container .content-box h1{
+font-size: 1.5rem;
+padding-top: 1rem;
+}
+#mobile-feature .container .content-box p{
+  font-size: 0.9rem;
+
+  }
+
+
+#mobile-feature .feat{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+#mobile-feature .feat h2{
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+#mobile-feature .feat p{
+  font-size: 0.8rem;
+  padding-top: 0.4rem;
+}
+
+
+/* Mobile stat ---------------------------------------------------------------------------------------------------------------------------*/
+
+#mobile-stat{
+
+}
+
+#mobile-stat .container h1{
+  font-size: 1.7rem;
+}
+
+#mobile-stat .container p{
+  font-size: 1rem;
+  font-weight: bold;
+}
+#mobile-stat .container .grid-4x{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#mobile-stat .container .grid-4x h1{
+ color: #1487FD;
+}
+
+/* Mobile contact ---------------------------------------------------------------------------------------------------------------------------*/
+#mobile-contact {
+  padding-bottom: 1rem;
+}
+
+#mobile-contact .btn-send-mob{
+  color: #ffffff;
+  background-color: #3096FE;
+  padding: 1rem 4rem;
+  border: 1rem;
+  border-radius: 1rem;
+  font-family: roboto;
+  margin-left: 5.5rem;
+}
+/* Mobile footer ---------------------------------------------------------------------------------------------------------------------------*/
+#mobile-footer .navbar .socialmedia{
+  width: 40rem;
+}
+
+
+.bye:not(.show) {
+  display: none;
+}
+
 @media(min-width: 768px) {
     .navbar-nav {
       flex-direction: row;
@@ -449,8 +574,8 @@ footer .navbar .socialmedia a{
     .nav-link {
       padding: 0 0.5rem;
     }
-    .collapse:not(.show){
-      display: flex;
+    .bye:not(.show){
+      display: block;
     }
     .navbar-toggler {
       display: none;
@@ -459,19 +584,24 @@ footer .navbar .socialmedia a{
       max-width: 720px;
     }
 
+    #mobile-header:not(.show) {
+      display: none;
+    }
     #mobile-us:not(.show) {
       display: none;
     }
-    #mobile-showcase:not(.show) {
+    #mobile-feature:not(.show) {
       display: none;
     }
-    #mobile-services:not(.show) {
+    #mobile-stat:not(.show) {
       display: none;
     }
-    #appointment-mob:not(.show) {
+    #mobile-contact:not(.show) {
       display: none;
     }
-   
+    #mobile-footer:not(.show) {
+      display: none;
+    }
     
   }
 
