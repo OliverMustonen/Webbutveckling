@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+/* font-family: 'Roboto Slab', serif; */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #626262;
+}
+
+h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(147, 154, 255);
+}
+
+h2 {
+color: black;
+}
+
+input{
+  width: 15rem;
+  height: 2rem;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.user {
+  border: 1px solid #333;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem; 
+  width: 40rem;
+}
+
+.invalid-feedback{
+  color: red;
+ 
+}
+
+
+.container {
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-count: 4;
+   
+}
+
+.container-list {
+  
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  
+ 
+}
+
+.phl{
+  margin-left: 1rem;
+  width: 15rem;
+  height: 1rem;
+}
+
+.btn {
+  width: 5rem;
+  height: 2rem;
+  margin-left: 1.5rem;
+}
+
+#btn{
+  margin-top: 1rem;
+}
+
+.btn-primary {
+  background-color: #1268F9;
+  color: white;
+  border-radius: 5px;
+  float: right;
+  
+}
+
+.btn-primary:hover {
+  background-color: #6190e2;
+  
+}
+
+.btn-danger {
+  background-color: #E03249;
+  color: white;
+  border-radius: 5px;
+  float: right;
+
+}
+.btn-danger:hover {
+  background-color: #e67a88;
+  
+}
+
+
+/*ANIMATEANIMATEANIMATEANIMATEANIMATEANIMATEANIMATEANIMATEANIMATEANIMATEANIMATEANIMATEANIMATEANIMATEANIMATEANIMATE*/
+
+.animate {
+  animation: slide-in 0.5s ease;
+}
+.slideout {
+  animation: slide-out 0.5s ease;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+}
